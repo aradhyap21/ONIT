@@ -23,6 +23,7 @@ Legend: [ ] todo, [x] done
 ## Notes and blockers
 - 2026-10-18: Created the Android Flutter scaffold, dark theme, navigation shell and GitHub Actions APK workflow. Android SDK and local APK builds are intentionally not part of this step.
 - 2026-10-18: Added private local .m4a recording with microphone permission handling, a five-minute limit, and Today-tab playback/deletion. Recording and playback still need a real-phone check.
+- 2026-10-18: Fixed the APK workflow's SDK mismatch by aligning permission_handler_android's SDK 37 requirement with Android Gradle Plugin 9.1.1 and installing Android SDK 37 in CI.
 
 ## Test log
 (user: after each APK test, write what worked and what failed)
