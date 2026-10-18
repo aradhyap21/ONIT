@@ -25,6 +25,7 @@ Legend: [ ] todo, [x] done
 - 2026-10-18: Added private local .m4a recording with microphone permission handling, a five-minute limit, and Today-tab playback/deletion. Recording and playback still need a real-phone check.
 - 2026-10-18: Fixed the APK workflow's SDK mismatch by aligning permission_handler_android's SDK 37 requirement with Android Gradle Plugin 9.1.1 and installing Android SDK 37 in CI.
 - 2026-10-18: Corrected the SDK installation step to call sdkmanager from the Android SDK command-line tools directory; GitHub Actions did not have sdkmanager on PATH.
+- 2026-10-18: Fixed YAML quoting in the sdkmanager workflow command after GitHub rejected the previous workflow before running its jobs.
 
 ## Test log
 (user: after each APK test, write what worked and what failed)
