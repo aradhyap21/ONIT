@@ -8,7 +8,7 @@ Legend: [ ] todo, [x] done
 
 ## Steps
 - [x] Step 0: Scaffold, theme, navigation shell, cloud APK build
-- [ ] Step 1: Record and play back voice notes locally
+- [x] Step 1: Record and play back voice notes locally
 - [ ] Step 2: Supabase schema, auth, audio upload
 - [ ] Step 3: AI pipeline (transcribe, parse tasks, confirm screen)
 - [ ] Step 4: Today screen, categories, follow-ups, manual tasks
@@ -22,6 +22,7 @@ Legend: [ ] todo, [x] done
 
 ## Notes and blockers
 - 2026-10-18: Created the Android Flutter scaffold, dark theme, navigation shell and GitHub Actions APK workflow. Android SDK and local APK builds are intentionally not part of this step.
+- 2026-10-18: Added private local .m4a recording with microphone permission handling, a five-minute limit, and Today-tab playback/deletion. Recording and playback still need a real-phone check.
 
 ## Test log
 (user: after each APK test, write what worked and what failed)
