@@ -27,6 +27,7 @@ Legend: [ ] todo, [x] done
 - 2026-10-18: Corrected the SDK installation step to call sdkmanager from the Android SDK command-line tools directory; GitHub Actions did not have sdkmanager on PATH.
 - 2026-10-18: Fixed YAML quoting in the sdkmanager workflow command after GitHub rejected the previous workflow before running its jobs.
 - 2026-10-18: Replaced manual sdkmanager invocation with android-actions/setup-android@v4 to install Android SDK 37 reliably on the hosted runner.
+- 2026-10-18: Removed the unreliable SDK 37 setup and pinned permission_handler 11.4.0, which resolves the earlier Android implementation and keeps the Flutter SDK 36 build configuration.
 
 ## Test log
 (user: after each APK test, write what worked and what failed)
