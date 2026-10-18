@@ -26,6 +26,7 @@ Legend: [ ] todo, [x] done
 - 2026-10-18: Fixed the APK workflow's SDK mismatch by aligning permission_handler_android's SDK 37 requirement with Android Gradle Plugin 9.1.1 and installing Android SDK 37 in CI.
 - 2026-10-18: Corrected the SDK installation step to call sdkmanager from the Android SDK command-line tools directory; GitHub Actions did not have sdkmanager on PATH.
 - 2026-10-18: Fixed YAML quoting in the sdkmanager workflow command after GitHub rejected the previous workflow before running its jobs.
+- 2026-10-18: Replaced manual sdkmanager invocation with android-actions/setup-android@v4 to install Android SDK 37 reliably on the hosted runner.
 
 ## Test log
 (user: after each APK test, write what worked and what failed)

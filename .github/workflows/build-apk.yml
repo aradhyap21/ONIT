@@ -18,8 +18,10 @@ jobs:
         with:
           channel: stable
           cache: true
-      - name: Install Android SDK 37
-        run: '"$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --install "platforms;android-37"'
+      - name: Set up Android SDK 37
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platforms;android-37'
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
